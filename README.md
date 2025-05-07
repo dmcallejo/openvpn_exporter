@@ -1,7 +1,6 @@
 # Prometheus OpenVPN exporter
 
-**Please note:** This repository is currently unmaintained. Due to insufficient time and not using the exporter anymore
-we decided to archive this project.
+Fork of the original project with support for OpenVPN 2.5 and wildcards, docker image and wildcard support for openvpn status files.
 
 ---
 
@@ -64,7 +63,7 @@ Usage of openvpn_exporter:
 
 ```sh
   -openvpn.status_paths string
-    	Paths at which OpenVPN places its status files. (default "examples/client.status,examples/server2.status,examples/server3.status")
+    	Paths at which OpenVPN places its status files, wildcards are supported. (default "examples/client.status,examples/server2.status,examples/server3.status")
   -web.listen-address string
     	Address to listen on for web interface and telemetry. (default ":9176")
   -web.telemetry-path string
